@@ -25,7 +25,7 @@ namespace AspNetIdentityRoles.Controllers
         }
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult Create(string message = "")
         {
             ViewBag.Message = message;
@@ -33,7 +33,7 @@ namespace AspNetIdentityRoles.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult Create([Bind(Include =
             "RoleName,Category,Description")]RoleViewModel model)
         {

@@ -34,13 +34,13 @@ namespace AspNetIdentityRoles.Models
         {
             base.OnModelCreating(modelBuilder);
             //modelBuilder.Entity<IdentityUser>().ToTable("Tb_Sys_Users");
-            modelBuilder.Entity<ApplicationUser>().ToTable("Tb_Sys_Users");
-            modelBuilder.Entity<IdentityRole>().ToTable("Tb_Sys_Roles");
-            modelBuilder.Entity<ApplicationRole>().ToTable("Tb_Sys_Roles");
-            modelBuilder.Entity<IdentityUserClaim>().ToTable("Tb_Sys_UserClaim");
-            modelBuilder.Entity<IdentityUserRole>().ToTable("Tb_Sys_UserRoles");
-            modelBuilder.Entity<ApplicationUserRole>().ToTable("Tb_Sys_UserRoles");
-            modelBuilder.Entity<IdentityUserLogin>().ToTable("Tb_Sys_UserLogins");
+            modelBuilder.Entity<ApplicationUser>().ToTable("TB_SYS_USERS","LDJX");
+            modelBuilder.Entity<IdentityRole>().ToTable("TB_SYS_ROLES", "LDJX");
+            modelBuilder.Entity<ApplicationRole>().ToTable("TB_SYS_ROLES", "LDJX");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("TB_SYS_USERCLAIM", "LDJX");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("TB_SYS_USERROLES", "LDJX");
+            modelBuilder.Entity<ApplicationUserRole>().ToTable("TB_SYS_USERROLES", "LDJX");
+            modelBuilder.Entity<IdentityUserLogin>().ToTable("TB_SYS_USERLOGINS", "LDJX");
                         
         }
         /*
