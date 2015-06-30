@@ -1,7 +1,7 @@
 ﻿@model AspNetIdentityRoles.Models.SelectUserRolesViewModel
 
 
-<h2>Roles for user @Html.DisplayFor(model => model.UserName)</h2>
+<h2>用户 @Html.DisplayFor(model => model.UserName) 的角色(Roles for user @Html.DisplayFor(model => model.UserName))</h2>
 <hr />
 
 @using (Html.BeginForm("UserRoles", "Account", FormMethod.Post, new { encType = "multipart/form-data", name = "myform" }))
@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <h4>Select Role Assignments</h4>
+        <h4>分配角色(Select Role Assignments)</h4>
         <br />
         <hr />
 
@@ -24,13 +24,13 @@
 
             <tr>
                 <th>
-                    Select
+                    选择
                 </th>
                 <th>
-                    Role
+                    角色
                 </th>
                 <th>
-                    Description
+                    描述
                 </th>
             </tr>
 
@@ -48,6 +48,6 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("返回列表", "Index")
 </div>
 
