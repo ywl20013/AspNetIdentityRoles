@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Moudles>
+  <Moudle name="Config">
+    <FileName>\bin\Areas.Config.dll</FileName>
+  </Moudle>
+</Moudles>

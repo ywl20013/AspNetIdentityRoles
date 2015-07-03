@@ -8,13 +8,10 @@ namespace AspNetIdentityRoles.Controllers
 {
     using Models;
 
-    [Authorize]
     public class RolesController : Controller
     {
         private ApplicationDbContext _db = new ApplicationDbContext();
 
-        //验证登录用户角色="Admin"或者用户名="Admin"
-        [Authorize(Roles = "Admin", Users = "Admin")]
         public ActionResult Index()
         {
             var rolesList = new List<RoleViewModel>();
@@ -26,8 +23,6 @@ namespace AspNetIdentityRoles.Controllers
             return View(rolesList);
         }
 
-
-        [Authorize(Roles = "Admin", Users = "Admin")]
         public ActionResult Create(string message = "")
         {
             ViewBag.Message = message;
@@ -35,7 +30,6 @@ namespace AspNetIdentityRoles.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin", Users = "Admin")]
         public ActionResult Create([Bind(Include =
             "RoleName,Category,Description")]RoleViewModel model)
         {
@@ -59,7 +53,6 @@ namespace AspNetIdentityRoles.Controllers
         }
 
 
-        [Authorize(Roles = "Admin", Users = "Admin")]
         public ActionResult Edit(string id)
         {
             // It's actually the Role.Name tucked into the id param:
@@ -70,7 +63,6 @@ namespace AspNetIdentityRoles.Controllers
 
 
         [HttpPost]
-        [Authorize(Roles = "Admin", Users = "Admin")]
         public ActionResult Edit([Bind(Include =
             "RoleName,Category,OriginalRoleName,Description")] EditRoleViewModel model)
         {
@@ -87,8 +79,6 @@ namespace AspNetIdentityRoles.Controllers
             return View(model);
         }
 
-
-        [Authorize(Roles = "Admin", Users = "Admin")]
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -104,8 +94,6 @@ namespace AspNetIdentityRoles.Controllers
             return View(model);
         }
 
-
-        [Authorize(Roles = "Admin", Users = "Admin")]
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(string id)
         {

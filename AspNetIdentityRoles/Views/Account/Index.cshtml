@@ -7,15 +7,18 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Register")
+    @Html.ActionLink("创建", "Register")
 </p>
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.EmployeeId)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.UserName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.NickName)
         </th>
         <th></th>
     </tr>
@@ -24,15 +27,18 @@
     {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.UserName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Html.DisplayFor(modelItem => item.NickName)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.UserName }) |
-                @Html.ActionLink("Roles", "UserRoles", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.UserName })
+                @Html.ActionLink("编辑", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("角色", "UserRoles", new { id = item.Id }) |
+                @Html.ActionLink("删除", "Delete", new { id = item.Id })
             </td>
         </tr>
     }

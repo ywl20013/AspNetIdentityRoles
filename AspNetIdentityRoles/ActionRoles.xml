@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Roles>
+  <!--Account控制器的Index Action 只有用户名为Admin或者具有Admin角色的用户可以使用-->
+  <Controller name="Account">
+    <Action name="Index">
+      <Users>Admin</Users>
+      <Roles>Admin</Roles>
+    </Action>
+  </Controller>
+  <Controller name="Roles">
+    <Action name="Index">
+      <Users>Admin</Users>
+      <Roles>Admin</Roles>
+    </Action>
+  </Controller>
+</Roles>

@@ -130,18 +130,23 @@ namespace AspNetIdentityRoles.Models
         public EditUserViewModel(ApplicationUser user)
         {
             this.Id = user.Id;
+            this.EmployeeId = user.EmployeeId;
             this.UserName = user.UserName;
-            this.Email = user.Email;
+            this.NickName = user.NickName;
         }
 
         public string Id { get; set; }
 
         [Required]
-        [Display(Name = "User Name")]
-        public string UserName { get; set; }
+        [Display(Name = "工号")]
+        public string EmployeeId { get; set; }
 
         [Required]
-        public string Email { get; set; }
+        [Display(Name = "账户")]
+        public string UserName { get; set; }
+
+        [Display(Name = "姓名")]
+        public string NickName { get; set; }
     }
 
 
@@ -213,5 +218,5 @@ namespace AspNetIdentityRoles.Models
         public string Description { get; set; }
     }
 
-  
+
 }
