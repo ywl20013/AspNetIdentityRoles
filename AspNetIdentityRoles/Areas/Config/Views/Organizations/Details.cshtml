@@ -1,0 +1,110 @@
+﻿@model AspNetIdentityRoles.Areas.Config.Models.User.Organization
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Organization</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.STATUS)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.STATUS)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CRMAN)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CRMAN)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CRTIME)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CRTIME)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.MEMO)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.MEMO)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NAME)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NAME)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PID)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LVL)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LVL)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ID2)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ID2)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ORDERNO)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ORDERNO)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.OLDID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.OLDID)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.LINEID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

@@ -205,6 +205,11 @@
     <Content Include="Areas\Config\Views\Home\Index.cshtml" />
     <Content Include="Areas\Config\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Config\Views\Web.config" />
+    <Content Include="Areas\Config\Views\Organizations\Create.cshtml" />
+    <Content Include="Areas\Config\Views\Organizations\Delete.cshtml" />
+    <Content Include="Areas\Config\Views\Organizations\Details.cshtml" />
+    <Content Include="Areas\Config\Views\Organizations\Edit.cshtml" />
+    <Content Include="Areas\Config\Views\Organizations\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

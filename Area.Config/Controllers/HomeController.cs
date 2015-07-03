@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AspNetIdentityRoles.Area.Config.Controllers
+namespace AspNetIdentityRoles.Areas.Config.Controllers
 {
     public class HomeController : Controller
     {

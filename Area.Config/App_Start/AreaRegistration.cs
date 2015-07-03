@@ -18,7 +18,7 @@ namespace AspNetIdentityRoles
                 "Config_default",
                 "Config/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "AspNetIdentityRoles.Area.Config.Controllers" }
+                namespaces: new string[] { "AspNetIdentityRoles.Areas.Config.Controllers" }
             );
         }
     }

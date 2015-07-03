@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("Area.Config")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("网页配置区域")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("北京东方亮点信息技术有限公司")]
 [assembly: AssemblyProduct("Area.Config")]
 [assembly: AssemblyCopyright("版权所有(C) Microsoft 2015")]
 [assembly: AssemblyTrademark("")]
@@ -24,10 +24,10 @@ using System.Runtime.InteropServices;
 
 // 程序集的版本信息由下列四个值组成:
 //
-//      主版本
-//      次版本
-//      内部版本号
-//      修订版本
+//       主版本
+//       次版本
+//       内部版本号
+//       修订版本
 //
 // 你可以指定所有值，也可以让修订版本和内部版本号采用默认值，
 // 方法是按如下所示使用 "*":
